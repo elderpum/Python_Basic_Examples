@@ -21,14 +21,14 @@ def menu():
 def ingresarWKT():
     print('########### INGRESAR GEOMETRIA WKT ##########')
     ingresarCoordenada1 = input("Ingresa la primer coordenada: ")
-    if ingresarCoordenada1.isdigit() == True:
-        ingresarCoordenada1 = int(ingresarCoordenada1)
+    if ingresarCoordenada1.replace('.', '', 1).isdigit() == True:
+        ingresarCoordenada1 = float(ingresarCoordenada1)
     else:
         print("\nIngrese una opción válida por favor. \n")
 
     ingresarCoordenada2 = input("Ingresa la segunda coordenada: ")
-    if ingresarCoordenada2.isdigit() == True:
-        ingresarCoordenada2 = int(ingresarCoordenada2)
+    if ingresarCoordenada2.replace('.', '', 1).isdigit() == True:
+        ingresarCoordenada2 = float(ingresarCoordenada2)
     else:
         print("\nIngrese una opción válida por favor. \n")
 
